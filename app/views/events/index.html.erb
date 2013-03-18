@@ -1,0 +1,27 @@
+<ul>
+<% @events.each do |event| %>
+  <li>
+    <%= link_to event.name, event_path(event) %>
+    <%= link_to 'edit', edit_event_path(event) %>
+    <%= button_to 'delete', event_path(event), :method => :delete %>
+  </li>
+<% end %>
+</ul>
+ 
+<%= link_to 'new event', new_event_path %>
+
+<br/>
+
+<%= {:a => 1, :b => 1}.merge(:a => 0, :c => 2) %>
+
+<br/>
+
+<%= x=DateTime.current %>
+
+<br/>
+
+<%= x.utc %>
+
+<br/>
+
+<%= x.seconds_since_midnight %>
