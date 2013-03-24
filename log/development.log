@@ -1507,3 +1507,168 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-18 21:26:16 +0800
 Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Connecting to database specified by database.yml
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (10.5ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  Rendered events/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 232ms (Views: 148.1ms | ActiveRecord: 35.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Served asset /application.js - 200 OK (19ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Served asset /events.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Served asset /events.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 15:45:35 +0800
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-24 15:46:11 +0800
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" 
+  Rendered events/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-24 15:46:11 +0800
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:11 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:11 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:11 +0800
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-24 15:46:13 +0800
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-24 15:46:13 +0800
+Served asset /events.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:13 +0800
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:13 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:13 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2013-03-24 15:46:15 +0800
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (1.5ms)
+  Rendered events/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-24 15:46:15 +0800
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:15 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:15 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:15 +0800
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2013-03-24 15:46:22 +0800
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lhS6ftSgxY9lLMdTzvS53yfLMRanx7BiM0lj43CgGbg=", "event"=>{"name"=>"why", "description"=>"what"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (24.8ms)[0m  [1mINSERT INTO "events" ("capacity", "created_at", "description", "is_public", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["capacity", nil], ["created_at", Sun, 24 Mar 2013 07:46:22 UTC +00:00], ["description", "what"], ["is_public", nil], ["name", "why"], ["updated_at", Sun, 24 Mar 2013 07:46:22 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 33ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2013-03-24 15:46:22 +0800
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-24 15:46:22 +0800
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:22 +0800
+Served asset /events.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:22 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 15:46:22 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" 
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 16:08:31 +0800
+Served asset /application.js - 304 Not Modified (1ms)
